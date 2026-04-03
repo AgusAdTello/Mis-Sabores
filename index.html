@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Sabores | Elaboración Artesanal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tierra: {
+                            beige: '#fef3c7',     
+                            nav: '#f59e0b',       
+                            oscuro: '#6B2D30',    
+                            detalle: '#DDA77B',
+                            borde: '#E8E1D5'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Lora"', 'serif'], 
+                        sans: ['Lato', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-tierra-beige text-gray-700 font-sans antialiased">
+
+    <nav class="fixed w-full bg-tierra-nav shadow-md z-50 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="flex items-center justify-center h-20">
+                <a href="#" class="absolute left-4 sm:left-6 lg:left-8 flex items-center">
+                    <img src="Logo Mis Sabores rec.jpg" alt="Logo Mis Sabores" class="h-16 w-auto object-contain rounded-sm shadow-sm">
+                </a>
+                <div class="hidden md:flex space-x-10">
+                    <a href="#mermeladas" class="text-lg text-white/90 hover:text-white transition-colors font-semibold tracking-wide">Mermeladas</a>
+                    <a href="#naturales" class="text-lg text-white/90 hover:text-white transition-colors font-semibold tracking-wide">Al Natural</a>
+                    <a href="#almibar" class="text-lg text-white/90 hover:text-white transition-colors font-semibold tracking-wide">En Almíbar</a>
+                    <a href="#conservas" class="text-lg text-white/90 hover:text-white transition-colors font-semibold tracking-wide">Conservas</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-36 pb-16 text-center px-4 max-w-3xl mx-auto">
+        <h1 class="font-serif text-5xl md:text-6xl text-tierra-oscuro mb-6">Nuestros Sabores</h1>
+        <p class="text-lg md:text-xl text-stone-600 leading-relaxed">
+            Elaboración artesanal premium. Conservamos la esencia y el sabor de la naturaleza en cada frasco, utilizando la mejor materia prima.
+        </p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 pb-24 space-y-32">
+        
+        <section id="mermeladas" class="scroll-mt-24">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl text-tierra-oscuro mb-4">Mermeladas Premium</h2>
+                <div class="w-16 h-1 bg-tierra-detalle mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <article class="bg-white rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all border border-tierra-borde flex flex-col group">
+                    <div class="relative w-full h-64 mb-6 overflow-hidden rounded-xl bg-stone-50">
+                        <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-3 py-1.5 rounded shadow-sm z-10 tracking-wide">Disponible</span>
+                        <img src="mermelada-higos.jpg" alt="Mermelada de Higos" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="flex-grow flex flex-col">
+                        <h3 class="font-serif text-2xl text-tierra-oscuro mb-2">Mermelada de Higos</h3>
+                        <p class="text-stone-500 text-sm mb-3 font-semibold tracking-wide">ELABORACIÓN ARTESANAL</p>
+                        <p class="text-stone-600 leading-relaxed text-base">De sabor naturalmente dulce con notas acarameladas. Elaborada a fuego lento con higos frescos seleccionados para lograr una textura suave y profundamente afrutada.</p>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all border border-tierra-borde flex flex-col group">
+                    <div class="relative w-full h-64 mb-6 overflow-hidden rounded-xl bg-stone-50">
+                        <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-3 py-1.5 rounded shadow-sm z-10 tracking-wide">Disponible</span>
+                        <img src="mermelada-higos-sin-azucar.jpg" alt="Mermelada de Higos con reduccion de Azucar" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="flex-grow flex flex-col">
+                        <h3 class="font-serif text-2xl text-tierra-oscuro mb-2">Mermelada de Higos con reducción de Azucar</h3>
+                        <p class="text-stone-500 text-sm mb-3 font-semibold tracking-wide">ELABORACIÓN ARTESANAL</p>
+                        <p class="text-stone-600 leading-relaxed text-base">De sabor naturalmente dulce. Elaborada a fuego lento con higos frescos seleccionados para lograr una textura suave y profundamente afrutada.</p>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all border border-tierra-borde flex flex-col group">
+                    <div class="relative w-full h-64 mb-6 overflow-hidden rounded-xl bg-stone-50">
+                        <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-3 py-1.5 rounded shadow-sm z-10 tracking-wide">Disponible</span>
+                        <img src="mermelada-ciruelas.jpg" alt="Mermelada de Ciruelas" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="flex-grow flex flex-col">
+                        <h3 class="font-serif text-2xl text-tierra-oscuro mb-2">Mermelada de Ciruelas</h3>
+                        <p class="text-stone-500 text-sm mb-3 font-semibold tracking-wide">ELABORACIÓN ARTESANAL</p>
+                        <p class="text-stone-600 leading-relaxed text-base">De un intenso color púrpura, ofrece la acidez justa para despertar los sentidos. El equilibrio perfecto entre lo dulce y lo refinado de la ciruela de estación.</p>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all border border-tierra-borde flex flex-col group">
+                    <div class="relative w-full h-64 mb-6 overflow-hidden rounded-xl bg-stone-50">
+                        <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-3 py-1.5 rounded shadow-sm z-10 tracking-wide">Disponible</span>
+                        <img src="mermelada-duraznos.jpg" alt="Mermelada de Duraznos" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="flex-grow flex flex-col">
+                        <h3 class="font-serif text-2xl text-tierra-oscuro mb-2">Mermelada de Duraznos</h3>
+                        <p class="text-stone-500 text-sm mb-3 font-semibold tracking-wide">ELABORACIÓN ARTESANAL</p>
+                        <p class="text-stone-600 leading-relaxed text-base">Sabor dulce y fresco con trozos de fruta. Captura a la perfección la dulzura y frescura de los duraznos en su punto máximo de maduración.</p>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all border border-tierra-borde flex flex-col group">
+                    <div class="relative w-full h-64 mb-6 overflow-hidden rounded-xl bg-stone-50">
+                        <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-3 py-1.5 rounded shadow-sm z-10 tracking-wide">Disponible</span>
+                        <img src="mermelada-manzana.jpg" alt="Mermelada de Manzana" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="flex-grow flex flex-col">
+                        <h3 class="font-serif text-2xl text-tierra-oscuro mb-2">Mermelada de Manzana</h3>
+                        <p class="text-stone-500 text-sm mb-3 font-semibold tracking-wide">ELABORACIÓN ARTESANAL</p>
+                        <p class="text-stone-600 leading-relaxed text-base">Suave, aromática y reconfortante. Una mermelada clásica de textura sedosa que resalta el dulzor natural y delicado de las manzanas seleccionadas.</p>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all border border-tierra-borde flex flex-col group">
+                    <div class="relative w-full h-64 mb-6 overflow-hidden rounded-xl bg-stone-50">
+                        <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-3 py-1.5 rounded shadow-sm z-10 tracking-wide">Disponible</span>
+                        <img src="mermelada-naranja.jpg" alt="Mermelada de Naranja" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="flex-grow flex flex-col">
+                        <h3 class="font-serif text-2xl text-tierra-oscuro mb-2">Mermelada de Naranja</h3>
+                        <p class="text-stone-500 text-sm mb-3 font-semibold tracking-wide">ELABORACIÓN ARTESANAL</p>
+                        <p class="text-stone-600 leading-relaxed text-base">Combina la dulzura de la fruta con sutiles filamentos de cáscara. El equilibrio cítrico perfecto para los paladares más exigentes.</p>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all border border-tierra-borde flex flex-col group">
+                    <div class="relative w-full h-64 mb-6 overflow-hidden rounded-xl bg-stone-50">
+                        <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-3 py-1.5 rounded shadow-sm z-10 tracking-wide">Disponible</span>
+                        <img src="mermelada-frutillas.jpg" alt="Mermelada de Frutillas" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="flex-grow flex flex-col">
+                        <h3 class="font-serif text-2xl text-tierra-oscuro mb-2">Mermelada de Frutillas</h3>
+                        <p class="text-stone-500 text-sm mb-3 font-semibold tracking-wide">ELABORACIÓN ARTESANAL</p>
+                        <p class="text-stone-600 leading-relaxed text-base">Vibrante y deliciosa. Elaborada con frutillas enteras que aportan una textura única y un sabor inconfundible, ideal para repostería o desayunos.</p>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all border border-tierra-borde flex flex-col group">
+                    <div class="relative w-full h-64 mb-6 overflow-hidden rounded-xl bg-stone-50">
+                        <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-3 py-1.5 rounded shadow-sm z-10 tracking-wide">Disponible</span>
+                        <img src="mermelada-tomate.jpg" alt="Mermelada de Tomate" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="flex-grow flex flex-col">
+                        <h3 class="font-serif text-2xl text-tierra-oscuro mb-2">Mermelada de Tomate</h3>
+                        <p class="text-stone-500 text-sm mb-3 font-semibold tracking-wide">ELABORACIÓN ARTESANAL</p>
+                        <p class="text-stone-600 leading-relaxed text-base">Una exquisitez agridulce sorprendente. Perfecta para acompañar quesos curados, carnes frías o darle un toque gourmet a tus tostadas.</p>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all border border-tierra-borde flex flex-col group">
+                    <div class="relative w-full h-64 mb-6 overflow-hidden rounded-xl bg-stone-50">
+                        <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-3 py-1.5 rounded shadow-sm z-10 tracking-wide">Disponible</span>
+                        <img src="mermelada-pera.jpg" alt="Mermelada de Pera" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="flex-grow flex flex-col">
+                        <h3 class="font-serif text-2xl text-tierra-oscuro mb-2">Mermelada de Pera</h3>
+                        <p class="text-stone-500 text-sm mb-3 font-semibold tracking-wide">ELABORACIÓN ARTESANAL</p>
+                        <p class="text-stone-600 leading-relaxed text-base">De textura cristalina y sabor sumamente delicado. Una mermelada elegante que conserva el perfume característico de las peras maduras.</p>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all border border-tierra-borde flex flex-col group opacity-90">
+                    <div class="relative w-full h-64 mb-6 overflow-hidden rounded-xl bg-stone-50">
+                        <span class="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-3 py-1.5 rounded shadow-sm z-10 tracking-wide">No disponible</span>
+                        <img src="mermelada-frutos-rojos.jpg" alt="Mermelada de Frutos Rojos" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 grayscale-[20%]">
+                    </div>
+                    <div class="flex-grow flex flex-col">
+                        <h3 class="font-serif text-2xl text-tierra-oscuro mb-2">Mermelada de Frutos Rojos</h3>
+                        <p class="text-stone-500 text-sm mb-3 font-semibold tracking-wide">ELABORACIÓN ARTESANAL</p>
+                        <p class="text-stone-600 leading-relaxed text-base">Una exquisita combinación de moras, frambuesas y arándanos. Sabor intenso y textura ideal para realzar tus desayunos y postres favoritos.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="naturales" class="scroll-mt-24">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl text-tierra-oscuro mb-4">Frutas al Natural</h2>
+                <div class="w-16 h-1 bg-tierra-detalle mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <article class="bg-white rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all border border-tierra-borde flex flex-col group">
+                    <div class="relative w-full h-64 mb-6 overflow-hidden rounded-xl bg-stone-50">
+                        <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-3 py-1.5 rounded shadow-sm z-10 tracking-wide">Disponible</span>
+                        <img src="natural-frutillas.jpg" alt="Frutillas al Natural" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="flex-grow flex flex-col">
+                        <h3 class="font-serif text-2xl text-tierra-oscuro mb-2">Frutillas al Natural</h3>
+                        <p class="text-stone-500 text-sm mb-3 font-semibold tracking-wide">COMPOTAS PREMIUM</p>
+                        <p class="text-stone-600 leading-relaxed text-base">Conservamos las frutillas enteras en un jugo suave para que mantengan su frescura y color. Ideales para postres o disfrutar solas bien frías.</p>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all border border-tierra-borde flex flex-col group">
+                    <div class="relative w-full h-64 mb-6 overflow-hidden rounded-xl bg-stone-50">
+                        <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-3 py-1.5 rounded shadow-sm z-10 tracking-wide">Disponible</span>
+                        <img src="natural-ciruelas.jpg" alt="Ciruelas al Natural" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="flex-grow flex flex-col">
+                        <h3 class="font-serif text-2xl text-tierra-oscuro mb-2">Ciruelas al Natural</h3>
+                        <p class="text-stone-500 text-sm mb-3 font-semibold tracking-wide">COMPOTAS PREMIUM</p>
+                        <p class="text-stone-600 leading-relaxed text-base">Mitades de ciruela tiernas y jugosas en su propio jugo natural. Un postre ligero, saludable y lleno del auténtico sabor de la fruta fresca.</p>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all border border-tierra-borde flex flex-col group">
+                    <div class="relative w-full h-64 mb-6 overflow-hidden rounded-xl bg-stone-50">
+                        <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-3 py-1.5 rounded shadow-sm z-10 tracking-wide">Disponible</span>
+                        <img src="natural-peras.jpg" alt="Peras al Natural" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="flex-grow flex flex-col">
+                        <h3 class="font-serif text-2xl text-tierra-oscuro mb-2">Peras al Natural</h3>
+                        <p class="text-stone-500 text-sm mb-3 font-semibold tracking-wide">COMPOTAS PREMIUM</p>
+                        <p class="text-stone-600 leading-relaxed text-base">Peras cuidadosamente peladas y envasadas al natural para proteger su textura firme pero suave. Un clásico que nunca falla en la mesa.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="almibar" class="scroll-mt-24">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl text-tierra-oscuro mb-4">Frutas en Almíbar</h2>
+                <div class="w-16 h-1 bg-tierra-detalle mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <article class="bg-white rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all border border-tierra-borde flex flex-col group">
+                    <div class="relative w-full h-64 mb-6 overflow-hidden rounded-xl bg-stone-50">
+                        <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-3 py-1.5 rounded shadow-sm z-10 tracking-wide">Disponible</span>
+                        <img src="almibar-higos.jpg" alt="Higos en Almíbar" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="flex-grow flex flex-col">
+                        <h3 class="font-serif text-2xl text-tierra-oscuro mb-2">Higos en Almíbar</h3>
+                        <p class="text-stone-500 text-sm mb-3 font-semibold tracking-wide">DULCES TRADICIONALES</p>
+                        <p class="text-stone-600 leading-relaxed text-base">Higos enteros sumergidos en un almíbar espeso y brillante. Un verdadero manjar tradicional argentino, perfecto para acompañar con nueces o crema.</p>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all border border-tierra-borde flex flex-col group">
+                    <div class="relative w-full h-64 mb-6 overflow-hidden rounded-xl bg-stone-50">
+                        <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-3 py-1.5 rounded shadow-sm z-10 tracking-wide">Disponible</span>
+                        <img src="almibar-zapallos.jpg" alt="Zapallos en Almíbar" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="flex-grow flex flex-col">
+                        <h3 class="font-serif text-2xl text-tierra-oscuro mb-2">Zapallos en Almíbar</h3>
+                        <p class="text-stone-500 text-sm mb-3 font-semibold tracking-wide">DULCES TRADICIONALES</p>
+                        <p class="text-stone-600 leading-relaxed text-base">Cubitos de zapallo cocinados pacientemente hasta quedar cristalizados por fuera y tiernos por dentro. El sabor de las recetas de la abuela.</p>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all border border-tierra-borde flex flex-col group opacity-90">
+                    <div class="relative w-full h-64 mb-6 overflow-hidden rounded-xl bg-stone-50">
+                        <span class="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-3 py-1.5 rounded shadow-sm z-10 tracking-wide">No disponible</span>
+                        <img src="almibar-kinotos.jpg" alt="Kinotos en Almíbar" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 grayscale-[20%]">
+                    </div>
+                    <div class="flex-grow flex flex-col">
+                        <h3 class="font-serif text-2xl text-tierra-oscuro mb-2">Kinotos en Almíbar</h3>
+                        <p class="text-stone-500 text-sm mb-3 font-semibold tracking-wide">DULCES TRADICIONALES</p>
+                        <p class="text-stone-600 leading-relaxed text-base">Un bocado cítrico y dulce a la vez. Kinotos enteros confitados en almíbar, ideales para decorar postres o disfrutar como un bocado gourmet.</p>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all border border-tierra-borde flex flex-col group">
+                    <div class="relative w-full h-64 mb-6 overflow-hidden rounded-xl bg-stone-50">
+                        <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-3 py-1.5 rounded shadow-sm z-10 tracking-wide">Disponible</span>
+                        <img src="almibar-naranja.jpg" alt="Naranjas en Almíbar" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="flex-grow flex flex-col">
+                        <h3 class="font-serif text-2xl text-tierra-oscuro mb-2">Naranja en Almíbar</h3>
+                        <p class="text-stone-500 text-sm mb-3 font-semibold tracking-wide">DULCES TRADICIONALES</p>
+                        <p class="text-stone-600 leading-relaxed text-base">Rodajas de naranja confitadas lentamente. Una explosión de sabor que combina la intensidad de los cítricos con la suavidad del almíbar.</p>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all border border-tierra-borde flex flex-col group">
+                    <div class="relative w-full h-64 mb-6 overflow-hidden rounded-xl bg-stone-50">
+                        <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-3 py-1.5 rounded shadow-sm z-10 tracking-wide">Disponible</span>
+                        <img src="almibar-limas.jpg" alt="Limas en Almíbar" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="flex-grow flex flex-col">
+                        <h3 class="font-serif text-2xl text-tierra-oscuro mb-2">Limas en Almíbar</h3>
+                        <p class="text-stone-500 text-sm mb-3 font-semibold tracking-wide">DULCES TRADICIONALES</p>
+                        <p class="text-stone-600 leading-relaxed text-base">Limas cuidadosamente seleccionadas y confitadas. Un equilibrio perfecto y refrescante entre la acidez cítrica y el dulzor del almíbar artesanal.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="conservas" class="scroll-mt-24">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl text-tierra-oscuro mb-4">Conservas y Escabeches</h2>
+                <div class="w-16 h-1 bg-tierra-detalle mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col gap-10">
+                
+                <article class="bg-white rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all border border-tierra-borde flex flex-col md:flex-row gap-8 items-center group">
+                    <div class="relative w-full md:w-1/3 h-56 overflow-hidden rounded-xl bg-stone-50 shrink-0">
+                        <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-3 py-1.5 rounded shadow-sm z-10 tracking-wide">Disponible</span>
+                        <img src="escabeche-berenjenas.jpg" alt="Berenjenas al Escabeche" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h3 class="font-serif text-3xl text-tierra-oscuro mb-2">Berenjenas al Escabeche</h3>
+                        <p class="text-stone-600 leading-relaxed text-lg mb-4">Marinadas pacientemente en nuestra mezcla especial de aceite de primera calidad, vinagre y especias seleccionadas. Un sabor intenso y tradicional, el acompañamiento ideal para cualquier picada.</p>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all border border-tierra-borde flex flex-col md:flex-row gap-8 items-center group">
+                    <div class="relative w-full md:w-1/3 h-56 overflow-hidden rounded-xl bg-stone-50 shrink-0">
+                        <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-3 py-1.5 rounded shadow-sm z-10 tracking-wide">Disponible</span>
+                        <img src="escabeche-zanahorias.jpg" alt="Zanahorias al Escabeche" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h3 class="font-serif text-3xl text-tierra-oscuro mb-2">Zanahorias al Escabeche</h3>
+                        <p class="text-stone-600 leading-relaxed text-lg mb-4">Crujientes rodajas de zanahoria conservadas en un escabeche suave y aromático. Aportan color, textura y un sabor inigualable a tus platos y entradas.</p>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all border border-tierra-borde flex flex-col md:flex-row gap-8 items-center group">
+                    <div class="relative w-full md:w-1/3 h-56 overflow-hidden rounded-xl bg-stone-50 shrink-0">
+                        <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-3 py-1.5 rounded shadow-sm z-10 tracking-wide">Disponible</span>
+                        <img src="conserva-pepinos.jpg" alt="Pepinos en Conserva" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h3 class="font-serif text-3xl text-tierra-oscuro mb-2">Pepinos en Conserva</h3>
+                        <p class="text-stone-600 leading-relaxed text-lg mb-4">Pepinos seleccionados en un vinagre condimentado que les otorga ese toque agridulce y crujiente tan buscado. Infaltables en sándwiches y ensaladas.</p>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all border border-tierra-borde flex flex-col md:flex-row gap-8 items-center group">
+                    <div class="relative w-full md:w-1/3 h-56 overflow-hidden rounded-xl bg-stone-50 shrink-0">
+                        <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-3 py-1.5 rounded shadow-sm z-10 tracking-wide">Disponible</span>
+                        <img src="conserva-aceitunas.jpg" alt="Aceitunas" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h3 class="font-serif text-3xl text-tierra-oscuro mb-2">Aceitunas Artesanales</h3>
+                        <p class="text-stone-600 leading-relaxed text-lg mb-4">Aceitunas carnosas de excelente calibre, curadas con métodos tradicionales para resaltar su sabor natural. El alma de toda buena mesa argentina.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white border-t border-tierra-borde py-10 mt-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="font-serif text-2xl text-tierra-oscuro mb-4">Mis Sabores</h2>
+            <p class="text-stone-500">© 2026 Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5491100000000?text=Hola!%20Me%20gustaría%20hacer%20un%20pedido%20de%20Mis%20Sabores." 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:bg-[#128C7E] hover:scale-110 transition-transform duration-300 z-50 flex items-center justify-center">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+</body>
+</html>
