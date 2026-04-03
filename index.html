@@ -31,17 +31,37 @@
 <body class="bg-tierra-beige text-gray-700 font-sans antialiased">
 
     <nav class="fixed w-full bg-tierra-nav shadow-md z-50 transition-all">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-            <div class="flex items-center justify-center h-20">
-                <a href="#" class="absolute left-4 sm:left-6 lg:left-8 flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <a href="#" class="flex items-center">
                     <img src="Logo Mis Sabores rec.jpg" alt="Logo Mis Sabores" class="h-16 w-auto object-contain rounded-sm shadow-sm">
                 </a>
+                
                 <div class="hidden md:flex space-x-10">
                     <a href="#mermeladas" class="text-lg text-white/90 hover:text-white transition-colors font-semibold tracking-wide">Mermeladas</a>
                     <a href="#naturales" class="text-lg text-white/90 hover:text-white transition-colors font-semibold tracking-wide">Al Natural</a>
                     <a href="#almibar" class="text-lg text-white/90 hover:text-white transition-colors font-semibold tracking-wide">En Almíbar</a>
                     <a href="#conservas" class="text-lg text-white/90 hover:text-white transition-colors font-semibold tracking-wide">Conservas</a>
                 </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-white hover:text-white/80 focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-tierra-nav shadow-lg border-t border-white/20">
+            <div class="px-4 pt-2 pb-6 space-y-2 flex flex-col">
+                <a href="#mermeladas" class="mobile-link text-white font-medium text-lg py-2 border-b border-white/10">Mermeladas</a>
+                <a href="#naturales" class="mobile-link text-white font-medium text-lg py-2 border-b border-white/10">Al Natural</a>
+                <a href="#almibar" class="mobile-link text-white font-medium text-lg py-2 border-b border-white/10">En Almíbar</a>
+                <a href="#conservas" class="mobile-link text-white font-medium text-lg py-2">Conservas</a>
             </div>
         </div>
     </nav>
@@ -368,7 +388,7 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/5491100000000?text=Hola!%20Me%20gustaría%20hacer%20un%20pedido%20de%20Mis%20Sabores." 
+    <a href="https://wa.me/5491164536335?text=Hola!%20Me%20gustaría%20hacer%20un%20pedido%20de%20Mis%20Sabores." 
        target="_blank" 
        rel="noopener noreferrer"
        class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:bg-[#128C7E] hover:scale-110 transition-transform duration-300 z-50 flex items-center justify-center">
